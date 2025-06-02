@@ -10,7 +10,7 @@ const Display = () => {
 
   // Fetch albums từ backend API
   useEffect(() => {
-    fetch('http://localhost:4000/api/album/list')
+    fetch('https://spotify-backend-ybm2.onrender.com/api/album/list')
       .then(res => res.json())
       .then(data => setAlbums(data))
       .catch(err => console.error('Lỗi lấy albums:', err));
