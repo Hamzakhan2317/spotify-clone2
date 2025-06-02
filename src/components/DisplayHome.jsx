@@ -11,7 +11,7 @@ const DisplayHome = () => {
 
   useEffect(() => {
     // Fetch albums
-    axios.get("http://localhost:4000/api/album/list")
+    axios.get("https://spotify-backend-ybm2.onrender.com/api/album/list")
       .then(res => {
         setAlbums(res.data);
       })
@@ -20,7 +20,7 @@ const DisplayHome = () => {
       });
 
     // Fetch songs
-    axios.get("https://spotifybackendj.onrender.com/api/song/list")
+    axios.get("https://spotify-backend-ybm2.onrender.com/api/song/list")
       .then(res => {
         setSongs(res.data);
       })
